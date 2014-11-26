@@ -58,10 +58,7 @@ func (c *Clever) GetNoun() string {
 }
 
 func (c *Clever) GetVerb() string {
-	x := randInt(0,len(c.verbs)-1)
-	d := c.verbs[x]
-	fmt.Printf("----rand-%d--%s\n", x, d)
-	return d
+	return c.verbs[randInt(0,len(c.verbs)-1)]
 }
 
 func (c *Clever) GetUsername() string {
