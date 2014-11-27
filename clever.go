@@ -65,7 +65,7 @@ func (c *Clever) GetUsername() string {
 	if c.EnableExtraNums {
 		return fmt.Sprintf("%s-%s-%d", c.GetAdjective(), c.GetVerb(), randInt(1,999))
 	} 
-	return fmt.Sprintf("%s-%s", c.GetAdjective(), c.GetVerb())
+	return fmt.Sprintf("%s-%s", c.GetVerb(), c.GetNount())
 }
 
 
